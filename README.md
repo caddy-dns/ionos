@@ -1,5 +1,7 @@
 # IONOS DNS module for Caddy
 
+[![run tests](https://github.com/caddy-dns/ionos/actions/workflows/test.yml/badge.svg)](https://github.com/caddy-dns/ionos/actions/workflows/test.yml)
+
 This package contains a DNS provider module for
 [Caddy](https://github.com/caddyserver/caddy). It is used to manage DNS records
 with the [IONOS DNS API](https://developer.hosting.ionos.com/docs/dns) using
@@ -53,4 +55,3 @@ for information about obtaining credentials.
 
 (c) Copyright 2021 by Jan Delgado
 License: MIT
-
