@@ -5,7 +5,7 @@
 This package contains a DNS provider module for
 [Caddy](https://github.com/caddyserver/caddy). It is used to manage DNS records
 with the [IONOS DNS API](https://developer.hosting.ionos.com/docs/dns) using
-[libdns-ionos](https://github.com/libdns/ionos)..
+[libdns-ionos](https://github.com/libdns/ionos).
 
 ## Caddy module name
 
@@ -53,5 +53,6 @@ for information about obtaining credentials.
 
 ## Author
 
-(c) Copyright 2021 by Jan Delgado
+(c) Copyright 2021 by [Jan Delgado](https://github.com/jandelgado)
+
 License: MIT
