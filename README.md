@@ -42,6 +42,10 @@ your.domain.com {
 }
 ```
 
+The IONOS webinterfce will give you a so called `public prefix` and a `secret` those two values concatinated by a colon represent your API key.
+
+For example `cfc9247a69084db483bbfd4548350805.nFE1uW9G78kLl8siNFM-4y0jVut7Thx85jcWJt_qh48W2eYA8d079kcbx1K2HT9OhPVZGnavYlMsJIrCdut6Dg`
+
 You can replace `{env.YOUR_IONOS_AUTH_API_TOKEN}` with the actual auth token if
 you prefer to put it directly in your config instead of an environment
 variable.
