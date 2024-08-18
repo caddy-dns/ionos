@@ -44,10 +44,10 @@ func TestUnmarshalCaddyFileExtractsApiToken(t *testing.T) {
 func TestUnmarshalCaddyFileReportsErrorConditions(t *testing.T) {
 
 	tests := []struct{ test, expected string }{
-		{"ionos token invalid", "Wrong argument count"},
-		{"ionos { }", "missing API token"},
-		{`ionos token { api_token token }`, "API token already set"},
-		{`ionos { api_token token invalid }`, "Wrong argument count"},
+		{"ionos token invalid", "wrong argument count"},
+		{"ionos { }", "missing api token"},
+		{`ionos token { api_token token }`, "api token already set"},
+		{`ionos { api_token token invalid }`, "wrong argument count"},
 		{`ionos token { invalid token }`, "unrecognized subdirective 'invalid'"},
 	}
 
@@ -59,7 +59,7 @@ func TestUnmarshalCaddyFileReportsErrorConditions(t *testing.T) {
 			// when
 			err := p.UnmarshalCaddyfile(dispenser)
 			// then
-			if err == nil || !strings.Contains(err.Error(), tc.expected) {
+			if err == nil || !strings.Contains(strings.ToLower(err.Error()), tc.expected) {
 				t.Errorf("expected error with '%s' but got '%s'", tc.expected, err.Error())
 			}
 		})
