@@ -42,8 +42,8 @@ your.domain.com {
 }
 ```
 
-The IONOS webinterface will give you a so called `public prefix` and a `secret`
-those two values concatinated by a colon represent your API key.
+The IONOS webinterface will give you a so called `public prefix` and a `secret`.
+These two values concatenated by a period represents your API key.
 
 For example
 `cfc9247a69084db483bbfd4548350805.nFE1uW9G78kLl8siNFM-4y0jVut7Thx85jcWJt_qh48W2eYA8d079kcbx1K2HT9OhPVZGnavYlMsJIrCdut6Dg`
