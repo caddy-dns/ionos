@@ -33,7 +33,7 @@ func TestUnmarshalCaddyFileExtractsApiToken(t *testing.T) {
 			}
 
 			expected := "token"
-			actual := p.Provider.AuthAPIToken
+			actual := p.AuthAPIToken
 			if expected != actual {
 				t.Errorf("Expected AuthAPIToken to be '%s' but got '%s'", expected, actual)
 			}
@@ -70,11 +70,11 @@ func TestProvisionTransformsAPIToken(t *testing.T) {
 	// given
 	expected := "{value}"
 	p := Provider{&ionos.Provider{}}
-	p.Provider.AuthAPIToken = "\\{value\\}"
+	p.AuthAPIToken = "\\{value\\}"
 	// when
 	_ = p.Provision(caddy.Context{})
 	// then
-	actual := p.Provider.AuthAPIToken
+	actual := p.AuthAPIToken
 	if expected != actual {
 		t.Errorf("expected AuthAPIToken to be %s but got %s", expected, actual)
 	}
