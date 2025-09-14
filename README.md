@@ -24,7 +24,7 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
     "dns": {
       "provider": {
         "name": "ionos",
-        "api_token": "YOUR_IONOS_AUTH_API_TOKEN"
+        "auth_api_token": "YOUR_IONOS_AUTH_API_TOKEN"
       }
     }
   }
